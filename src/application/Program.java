@@ -38,6 +38,7 @@ public class Program {
 		
 		contractService.processContract(contract, quota);
 		
+		System.out.println("\nInstallments:");
 		for (Installment installment: contract.getInstallments()) {
 			System.out.println(installment);
 		}
